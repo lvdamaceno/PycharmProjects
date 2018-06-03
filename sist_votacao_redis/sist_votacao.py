@@ -12,9 +12,9 @@ def votacao(limite, id_inicio, id_final):
     """
     Povoa o banco com valores de votação randomicos, cria os valores
     id de usuarios ficticios, visto um range passado e seta no banco ao final
-    :param qtd: um int com a quantidade de votos à serem gerados
+    :param limite: int de limite de votações
     :param id_inicio: int com um valor inicial qualquer
-    :param id_final:  int com um valor final qualquer
+    :param id_final: int com um valor final qualquer
     :return: none
     """
     qtd = int(random.randint(1, limite))
