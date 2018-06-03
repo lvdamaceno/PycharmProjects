@@ -80,14 +80,8 @@ banco.
 """
 votacao(qtd_votos(1000), 100000, 999999)
 
-
-"""
-Efetua a apuração dos votos
-"""
+# Efetua a apuração dos votos
 t = apuracao()
-print(t[0])
 
-"""
-Retorna o vencedor
-"""
+# Retorna o vencedor
 resultado(t[0], t[1])
