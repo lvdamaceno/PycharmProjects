@@ -11,9 +11,9 @@ def qtd_votos(limite):
     return qtd
 
 
-def votacao(qtd):
+def votacao(qtd, id_inicio, id_final):
     for i in range(qtd):
-        user = str(random.randint(100000, 999999))
+        user = str(random.randint(id_inicio, id_final))
         voto = int(int(random.randint(1, 2)))
         r.set(user, voto)
     print('Qtd de votos: ' + str(qtd))
@@ -22,6 +22,8 @@ def votacao(qtd):
 def apuracao():
     c1 = 0
     c2 = 0
+    count = int(r.dbsize())
+    allkeys = r.keys('*')
     for i in range(count):
         # recebe o valor da chave na posição i
         voto = int(r.get(allkeys[i]))
@@ -45,17 +47,8 @@ def resultado(c1, c2):
 
 qtd_votos = qtd_votos(100)
 
-votacao(qtd_votos)
-
-# cria um lista com as chaves
-allkeys = r.keys('*')
-
-# recebe o tamanho do banco
-count = int(r.dbsize())
+votacao(qtd_votos, 100000, 999999)
 
 t = apuracao()
 
-c1 = t[0]
-c2 = t[1]
-
-resultado(c1, c2)
+resultado(t[0], t[1])
