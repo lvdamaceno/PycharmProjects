@@ -11,11 +11,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="redislab.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="redislab.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redislab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+            <state relative-caret-position="406">
+              <caret line="72" lean-forward="true" selection-start-line="65" selection-end-line="72" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sist_votacao.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sist_votacao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -37,6 +49,7 @@
       <list>
         <option value="$PROJECT_DIR$/carrinho.py" />
         <option value="$PROJECT_DIR$/redislab.py" />
+        <option value="$PROJECT_DIR$/sist_votacao.py" />
       </list>
     </option>
   </component>
@@ -80,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.redislab">
+  <component name="RunManager" selected="Python.sist_votacao">
     <configuration name="carrinho" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sist_votacao_redis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,12 +130,32 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="sist_votacao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sist_votacao_redis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sist_votacao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.redislab" />
       <item itemvalue="Python.carrinho" />
+      <item itemvalue="Python.sist_votacao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sist_votacao" />
         <item itemvalue="Python.redislab" />
         <item itemvalue="Python.carrinho" />
       </list>
@@ -202,8 +235,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redislab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+        <state relative-caret-position="406">
+          <caret line="72" lean-forward="true" selection-start-line="65" selection-end-line="72" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sist_votacao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
