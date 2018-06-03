@@ -38,7 +38,7 @@ def apuracao():
 def resultado(c1, c2):
     # faz a comparação entre os votos e diz quem foi o vencedor.
     if c1 == c2:
-        print('Empatou')
+        print('Empatou, ' + str(c1) + ' = ' + str(c2))
     elif c1 > c2:
         print('Candidato 1 foi campeão com ' + str(c1) + ' votos contra ' + str(c2))
     else:
