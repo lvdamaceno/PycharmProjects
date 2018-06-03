@@ -1,6 +1,7 @@
 import redis
 import random
 
+# conexão ao banco redis (Java sucks)
 r = redis.StrictRedis(host='localhost', port=6379,
                       charset="utf-8", decode_responses=True, db=0)
 # limpa o banco
@@ -61,8 +62,7 @@ def apuracao():
 def resultado(l):
     """
     Faz a comparação entre os votos e diz quem foi o vencedor.
-    :param c1: int, quantidade de votos computados para c1
-    :param c2: int, quantidade de votos computados para c2
+    :param l: lista com duas posições, sendo os resultados das votações
     :return: none
     """
     c1 = l[0]
@@ -75,11 +75,7 @@ def resultado(l):
         print('Candidato 2 foi campeão com ' + str(c2) + ' votos contra ' + str(c1))
 
 
-"""
-Executa a votação, informando no primeiro parametro a função qtd_votos
-com valor 1000 e os delimitadores dos ids fakes, ao final guarda tudo 
-banco.
-"""
+# calcula o range de votação, informa na função para rodar as votações
 votacao(qtd_votos(1000), 100000, 999999)
 
 # Efetua a apuração dos votos e retorna o vencedor
