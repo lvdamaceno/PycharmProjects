@@ -8,18 +8,7 @@ r = redis.StrictRedis(host='localhost', port=6379,
 r.flushall()
 
 
-def qtd_votos(limite):
-    """
-    Cria o range de votações que serão executadas,
-    de 1 até o limite informado.
-    :param limite: limite de votos que podem ser calculados
-    :return: um int da quantidade calculada
-    """
-    qtd = int(random.randint(1, limite))
-    return qtd
-
-
-def votacao(qtd, id_inicio, id_final):
+def votacao(limite, id_inicio, id_final):
     """
     Povoa o banco com valores de votação randomicos, cria os valores
     id de usuarios ficticios, visto um range passado e seta no banco ao final
@@ -28,6 +17,7 @@ def votacao(qtd, id_inicio, id_final):
     :param id_final:  int com um valor final qualquer
     :return: none
     """
+    qtd = int(random.randint(1, limite))
     for i in range(qtd):
         user = str(random.randint(id_inicio, id_final))
         voto = int(int(random.randint(1, 2)))
@@ -35,7 +25,7 @@ def votacao(qtd, id_inicio, id_final):
     print('Qtd de votos: ' + str(qtd))
 
 
-def apuracao():
+def resultado():
     """
     inicializa duas variaveis para receber a contagem de votos para
     c1 e c2, count recebe o tamanho do banco e allkeys os valores das
@@ -56,17 +46,16 @@ def apuracao():
             c1 += 1
         else:
             c2 += 1
-    return c1, c2
+    return decisao(c1, c2)
 
 
-def resultado(l):
+def decisao(c1, c2):
     """
     Faz a comparação entre os votos e diz quem foi o vencedor.
-    :param l: lista com duas posições, sendo os resultados das votações
+    :param c1: int, qtd de votos para c1
+    :param c2: int, qtd de votos para c2
     :return: none
     """
-    c1 = l[0]
-    c2 = l[1]
     if c1 == c2:
         print('Empatou, ' + str(c1) + ' = ' + str(c2))
     elif c1 > c2:
@@ -76,7 +65,7 @@ def resultado(l):
 
 
 # calcula o range de votação, informa na função para rodar as votações
-votacao(qtd_votos(1000), 100000, 999999)
+votacao(1000, 100000, 999999)
 
 # Efetua a apuração dos votos e retorna o vencedor
-resultado(apuracao())
+resultado()
