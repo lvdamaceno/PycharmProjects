@@ -55,16 +55,18 @@ def apuracao():
             c1 += 1
         else:
             c2 += 1
-    return [c1, c2]
+    return c1, c2
 
 
-def resultado(c1, c2):
+def resultado(l):
     """
     Faz a comparação entre os votos e diz quem foi o vencedor.
     :param c1: int, quantidade de votos computados para c1
     :param c2: int, quantidade de votos computados para c2
     :return: none
     """
+    c1 = l[0]
+    c2 = l[1]
     if c1 == c2:
         print('Empatou, ' + str(c1) + ' = ' + str(c2))
     elif c1 > c2:
@@ -80,8 +82,5 @@ banco.
 """
 votacao(qtd_votos(1000), 100000, 999999)
 
-# Efetua a apuração dos votos
-t = apuracao()
-
-# Retorna o vencedor
-resultado(t[0], t[1])
+# Efetua a apuração dos votos e retorna o vencedor
+resultado(apuracao())
