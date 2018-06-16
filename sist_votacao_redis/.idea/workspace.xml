@@ -14,8 +14,8 @@
       <file leaf-file-name="redislab.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redislab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="72" lean-forward="true" selection-start-line="65" selection-end-line="72" />
+            <state relative-caret-position="1080">
+              <caret line="72" selection-start-line="65" selection-end-line="72" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -26,8 +26,8 @@
       <file leaf-file-name="sist_votacao.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sist_votacao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -176,18 +176,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1297" height="685" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15692554" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15932746" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5004003" side_tool="true" weight="0.32846716" />
+      <window_info anchor="right" id="Run" order="3" weight="0.32746196" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32846716" />
-      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.32746196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49959967" weight="0.32846716" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49959967" visible="true" weight="0.32846716" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -206,6 +205,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/redislab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" lean-forward="true" selection-start-line="65" selection-end-line="72" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sist_votacao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redislab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -235,8 +254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redislab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="72" lean-forward="true" selection-start-line="65" selection-end-line="72" />
+        <state relative-caret-position="1080">
+          <caret line="72" selection-start-line="65" selection-end-line="72" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -245,8 +264,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sist_votacao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
