@@ -51,14 +51,8 @@ qtd_linhas = cassandra.execute("""
 select count(id) as qtd from users;
 """)
 
-# gambi para contar quantas linhas
-qtd = qtd_linhas.current_rows
-# qtd = [Row(qtd=x)] sendo x o numero de linhas
-qtd = qtd[0][-1]
+result = cassandra.execute("select * from users")
+for user in result:
+    print(user.age, user.lastname)
 
-for i in range(qtd):
-    result = cassandra.execute("""
-    select * from users allow filtering;
-    """)[i]
-    print(result.age, result.lastname)
 

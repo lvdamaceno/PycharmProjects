@@ -14,8 +14,8 @@
       <file leaf-file-name="create_table_users.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/create_table_users.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            <state relative-caret-position="128">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -212,15 +212,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1297" height="685" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18014412" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5007862" side_tool="true" weight="0.32846716" />
-      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.3138511" />
+      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.3138511" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49921384" weight="0.32846716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31569344" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31569344" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,8 +278,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/create_table_users.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        <state relative-caret-position="128">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
         </state>
       </provider>
     </entry>
