@@ -74,23 +74,30 @@ def deletar(musica):
         id_playlist = dados.id_playlist
         session.execute(
             "delete from playlist_atual where posicao = {0} and id_playlist = {1};".format(posicao, id_playlist))
-    print_table()
+
 
 # retorna a posicao de uma musica
 def posicao(musica):
     playlist_atual = session.execute("select * from playlist_atual where nome = '{0}';".format(musica))
     for dados in playlist_atual:
-        posicao = dados.posicao
         playlist = dados.id_playlist
-    return posicao, playlist
+        posicao = dados.posicao
+        id_musica = dados.id_musica
+    return playlist, posicao, id_musica
 
 def troca(musica1, musica2):
-    m1 = posicao(musica1[0])
-    m2 = posicao(musica2[0])
-    p1 = posicao(musica1[1])
-    p2 = posicao(musica2[1])
-    temp = m2
-    session.execute("update playlist_atual set posicao={0} where nome='{1}'".format(m2, musica1))
-    session.execute("update playlist_atual set posicao={0} where nome='{1}'".format(temp, musica2))
+    musica1 = posicao(musica1)
+    m1_playlist = musica1[0]
+    m1_posicao = musica1[1]
+    m1_musica = musica1[2]
+    print(m1_playlist, m1_posicao, m1_musica)
 
-troca('Help!', 'Yesterday')
+    musica2 = posicao(musica2)
+    m2_playlist = musica2[0]
+    m2_posicao = musica2[1]
+    m2_musica = musica2[2]
+    print(m2_playlist, m2_posicao, m2_musica)
+
+
+musica1='Help!'
+musica2='Blackbird'
