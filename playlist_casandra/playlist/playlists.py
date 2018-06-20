@@ -161,33 +161,41 @@ def troca(musica1, musica2, playlist):
 clean()
 # insere as 4 musicas na tabela
 insere_todas()
-""" prompt insere_todas() 
-1 1 Help! Beatles 6c0bdff2-cd46-4ad1-b107-40d2e8a84880 Help!
-1 2 The Beatles Beatles 3c00fecc-f6cf-4601-9d11-a1be83f609cc Blackbird
-1 3 Abbey Road Beatles 17ade43c-5296-4d87-9b55-b6e80bbe4e63 Something
-1 4 Help! Beatles 8f6afe4a-c964-411e-a874-1ee89789c260 Yesterday
+"""
+ id_playlist | posicao | album       | artista | id_musica                            | nome
+-------------+---------+-------------+---------+--------------------------------------+-----------
+           1 |       1 |       Help! | Beatles | 6c0bdff2-cd46-4ad1-b107-40d2e8a84880 |     Help!
+           1 |       2 | The Beatles | Beatles | 3c00fecc-f6cf-4601-9d11-a1be83f609cc | Blackbird
+           1 |       3 |  Abbey Road | Beatles | 17ade43c-5296-4d87-9b55-b6e80bbe4e63 | Something
+           1 |       4 |       Help! | Beatles | 8f6afe4a-c964-411e-a874-1ee89789c260 | Yesterday       
 """
 deletar('Help!', 1)
 print_table()
-""" prompt deletar('Help!', 1)
-1 2 The Beatles Beatles 3c00fecc-f6cf-4601-9d11-a1be83f609cc Blackbird
-1 3 Abbey Road Beatles 17ade43c-5296-4d87-9b55-b6e80bbe4e63 Something
-1 4 Help! Beatles 8f6afe4a-c964-411e-a874-1ee89789c260 Yesterday
+"""
+ id_playlist | posicao | album       | artista | id_musica                            | nome
+-------------+---------+-------------+---------+--------------------------------------+-----------
+           1 |       2 | The Beatles | Beatles | 3c00fecc-f6cf-4601-9d11-a1be83f609cc | Blackbird
+           1 |       3 |  Abbey Road | Beatles | 17ade43c-5296-4d87-9b55-b6e80bbe4e63 | Something
+           1 |       4 |       Help! | Beatles | 8f6afe4a-c964-411e-a874-1ee89789c260 | Yesterday
 """
 troca('Blackbird', 'Something', 1)
 print_table()
-""" prompt troca('Blackbird', 'Something', 1)
-1 2 Abbey Road Beatles 17ade43c-5296-4d87-9b55-b6e80bbe4e63 Something
-1 3 The Beatles Beatles 3c00fecc-f6cf-4601-9d11-a1be83f609cc Blackbird
-1 4 Help! Beatles 8f6afe4a-c964-411e-a874-1ee89789c260 Yesterday
+"""
+ id_playlist | posicao | album       | artista | id_musica                            | nome
+-------------+---------+-------------+---------+--------------------------------------+-----------
+           1 |       2 |  Abbey Road | Beatles | 17ade43c-5296-4d87-9b55-b6e80bbe4e63 | Something
+           1 |       3 | The Beatles | Beatles | 3c00fecc-f6cf-4601-9d11-a1be83f609cc | Blackbird
+           1 |       4 |       Help! | Beatles | 8f6afe4a-c964-411e-a874-1ee89789c260 | Yesterday
 """
 adicionar('Help!', 1)
 print_table()
-"""prompt adicionar('Help!', 1)
-1 2 Abbey Road Beatles 17ade43c-5296-4d87-9b55-b6e80bbe4e63 Something
-1 3 The Beatles Beatles 3c00fecc-f6cf-4601-9d11-a1be83f609cc Blackbird
-1 4 Help! Beatles 8f6afe4a-c964-411e-a874-1ee89789c260 Yesterday
-1 5 Help! Beatles 6c0bdff2-cd46-4ad1-b107-40d2e8a84880 Help!
+"""
+ id_playlist | posicao | album       | artista | id_musica                            | nome
+-------------+---------+-------------+---------+--------------------------------------+-----------
+           1 |       2 |  Abbey Road | Beatles | 17ade43c-5296-4d87-9b55-b6e80bbe4e63 | Something
+           1 |       3 | The Beatles | Beatles | 3c00fecc-f6cf-4601-9d11-a1be83f609cc | Blackbird
+           1 |       4 |       Help! | Beatles | 8f6afe4a-c964-411e-a874-1ee89789c260 | Yesterday
+           1 |       5 |       Help! | Beatles | 6c0bdff2-cd46-4ad1-b107-40d2e8a84880 |     Help!
 """
 
 """ Comportamento da tabela de versionamento
@@ -205,3 +213,4 @@ id_playlist | versao | modificacao
            1 |     10 |    ADI(Something, pos = 2)
            1 |     11 |                 ADI(Help!)
 """
+
